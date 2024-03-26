@@ -7,7 +7,6 @@ import css from './movies.module.css';
 
 const Movies = () => {
     const {movies, currentPage, themeTrigger} = useAppSelector(state => state.movieReducer);
-
     const {genreId} = useAppSelector(state => state.genreReducer);
     const dispatch = useAppDispatch();
 

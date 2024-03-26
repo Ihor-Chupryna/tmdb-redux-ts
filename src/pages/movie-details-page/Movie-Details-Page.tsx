@@ -15,7 +15,6 @@ const MovieDetailsPage = () => {
         dispatch(movieActions.getById({movieId: movieId}))
     }, [movieId, dispatch]);
 
-
     return (
         <div>
             <div>{isLoading && <Loading/>}</div>

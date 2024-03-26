@@ -11,13 +11,11 @@
 .mainContent {
     width: 100%;
     display: flex;
-
     z-index: 1;
     column-gap: 25px;
     justify-content: space-between;
     box-sizing: border-box;
     padding: 25px 50px;
-
 }
 
 .content {
@@ -75,7 +73,6 @@
 .imageLight {
     box-shadow: 2px 3px 15px black;
 }
-
 
 .starRating {
     width: 500px;
