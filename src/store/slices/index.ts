@@ -1,2 +1,3 @@
+export * from './genreSlice';
 export * from './loadingSlice';
-export * from './moviesSlice';
+export * from './movieSlice';

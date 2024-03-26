@@ -1,0 +1,8 @@
+.upcomingStyle {
+    padding: 25px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 25px;
+    column-gap: 25px;
+}

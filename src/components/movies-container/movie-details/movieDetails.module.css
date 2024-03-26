@@ -1,0 +1,85 @@
+.movieDetailsMain {
+    min-height: 93vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.backButton {
+    padding: 15px 0 0 15px;
+}
+
+.mainContent {
+    width: 100%;
+    display: flex;
+
+    z-index: 1;
+    column-gap: 25px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 25px 50px;
+
+}
+
+.content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.contentDark {
+    background-color: rgba(16, 15, 15, 0.7);
+    border: 1px solid white;
+}
+
+.contentLight {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid black;
+}
+
+.content h1, h2, h3, p {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.content h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 35px;
+    color: darkgreen;
+}
+
+.content h3 {
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.mainContent img {
+    width: 500px;
+}
+
+.imageDark {
+    box-shadow: 2px 3px 15px white;
+}
+
+.imageLight {
+    box-shadow: 2px 3px 15px black;
+}
+
+
+.starRating {
+    width: 500px;
+    position: absolute;
+    background: darkgrey;
+    text-align: center;
+}

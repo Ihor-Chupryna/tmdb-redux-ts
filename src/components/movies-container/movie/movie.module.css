@@ -1,0 +1,49 @@
+.mainMovie {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.mainMovieDark {
+    box-shadow: 2px 3px 15px white;
+}
+
+.mainMovieLight {
+    box-shadow: 2px 3px 15px black;
+}
+
+.mainMovie:hover {
+    cursor: pointer;
+    filter: brightness(70%)
+}
+
+.vote_average {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    color: snow;
+    background: cornflowerblue;
+    border-radius: 50%;
+    opacity: 0.8;
+    z-index: 3;
+    margin-left: 83%;
+}
+
+.headerAndImage {
+    position: relative;
+    z-index: 1;
+    height: 450px;
+}
+
+.headerAndImage h3 {
+    width: 100%;
+    position: absolute;
+    padding: 3px 7px;
+    background: darkgray;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 0;
+    z-index: 2;
+}

@@ -1,0 +1,7 @@
+.genresBadgesMain {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+    align-items: center;
+    margin: 15px 0;
+}

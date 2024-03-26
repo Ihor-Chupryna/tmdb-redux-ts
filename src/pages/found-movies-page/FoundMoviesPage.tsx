@@ -9,10 +9,9 @@ const FoundMoviesPage = () => {
     const dispatch = useAppDispatch();
 
     useEffect(() => {
-        dispatch(movieActions.searchByName({movieName:searchMovie}))
+        dispatch(movieActions.searchByName({movieName: searchMovie}))
     }, [dispatch, searchMovie]);
 
-    console.log(typeof searchMovie)
     return (
         <div>
             <FoundMovies/>

@@ -1,0 +1,9 @@
+.genresList {
+    display: flex;
+    width: 98vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 7px;
+    column-gap: 10px;
+    padding: 10px 0;
+}

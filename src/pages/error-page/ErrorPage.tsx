@@ -1,6 +1,8 @@
+import css from './errorPage.module.css';
+
 const ErrorPage = () => {
     return (
-        <div>
+        <div className={css.errorMain}>
             ErrorPage
         </div>
     );

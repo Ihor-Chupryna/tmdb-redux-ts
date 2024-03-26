@@ -1,25 +1,22 @@
-import { useAppDispatch, useAppSelector } from "../../../hooks";
 import { useEffect } from "react";
 
+import { useAppDispatch, useAppSelector } from "../../../hooks";
 import { movieActions } from "../../../store";
 import { Movie } from "../movie/Movie";
-
+import css from './movies.module.css';
 
 const Movies = () => {
-const {movies} = useAppSelector(state => state.movieReducer);
-const {isLoading} = useAppSelector(state => state.loadingReducer);
-const dispatch = useAppDispatch();
+    const {movies, currentPage, themeTrigger} = useAppSelector(state => state.movieReducer);
 
-    const genreId = '28'
-    const page = '2'
+    const {genreId} = useAppSelector(state => state.genreReducer);
+    const dispatch = useAppDispatch();
 
     useEffect(() => {
-        dispatch(movieActions.getAll({page:page, genreId:genreId}))
-    }, [genreId, page, dispatch]);
+        dispatch(movieActions.getAll({page: currentPage, genreId}))
+    }, [genreId, currentPage, dispatch]);
 
     return (
-        <div>
-            {isLoading && <h1 style={{color:'green'}}>Loading...</h1>}
+        <div className={`${css.moviesMain} ${themeTrigger? css.moviesMainLight : css.moviesMainDark}`}>
             {movies.map(value => <Movie key={value.id} movie={value}/>)}
         </div>
     );

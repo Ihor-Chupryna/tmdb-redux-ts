@@ -1,0 +1,7 @@
+.errorMain {
+    background-image: url("../../images/error-page.jpg");
+    background-size: 60%;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}

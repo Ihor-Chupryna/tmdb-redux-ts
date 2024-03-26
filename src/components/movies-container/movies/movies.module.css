@@ -1,0 +1,26 @@
+.moviesMain {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 75%;
+    margin: 20px auto;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 20px;
+    padding: 25px 20px;
+
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+.moviesMainDark {
+    background-color: rgba(16, 15, 15, 0.7);
+    border: 1px solid white;
+}
+
+.moviesMainLight {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid black;
+}

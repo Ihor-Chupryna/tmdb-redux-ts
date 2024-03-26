@@ -1,0 +1,10 @@
+.genreBadge {
+    width: fit-content;
+    padding: 5px 10px;
+    background: darkgreen;
+    box-sizing: border-box;
+    border-radius: 25px;
+    color: white;
+    font-style: italic;
+    cursor: pointer;
+}

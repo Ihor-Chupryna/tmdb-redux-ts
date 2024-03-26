@@ -12,7 +12,11 @@ const urls = {
         upcoming: `${movie}/upcoming`
     },
     genresList: `${genre}${movie}/list`,
-    image: (width: string, img: string) => `https://image.tmdb.org/t/p/w${width}/${img}`
+    image: (width: string, img: string) => `https://image.tmdb.org/t/p/${width}/${img}`,
+    video: {
+        trailers: (userId: string) => `${movie}/${userId}/videos`,
+        youTube: (key: string) => `https://www.youtube-nocookie.com/embed/${key}`
+    }
 }
 
 export { baseURL, urls }
